@@ -207,7 +207,7 @@ public abstract class BaseSliderView {
             mLoadListener.onStart(me);
         }
 
-        Picasso p = (mPicasso != null) ? mPicasso : Picasso.with(mContext);
+        Picasso p = (mPicasso != null) ? mPicasso : Picasso.get();
         RequestCreator rq = null;
         if(mUrl!=null){
             rq = p.load(mUrl);
